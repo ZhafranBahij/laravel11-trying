@@ -18,4 +18,9 @@ class Myschedule extends Model
         'status',
     ];
 
+    public function User()
+    {
+        return $this->belongsTo(User::class, 'user_id', 'id');
+    }
+
 }
